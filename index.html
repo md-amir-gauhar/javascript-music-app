@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Musically</title>
+  </head>
+  <body>
+    <div class="music-container" id="music-container">
+      <div class="music-info" id="music-info">
+        <div class="music-cover" id="music-cover">
+          <img
+            src="./Assets/covers/Attack on Titan- Opening 1.jpg"
+            alt="music-cover-image"
+            id="cover"
+          />
+        </div>
+        <h3 class="album-name" id="cover-name">AOT</h3>
+      </div>
+      <audio src="./Assets/musics/Attack on Titan- Opening 1.mp3" id="audio"></audio>
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="control-container">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

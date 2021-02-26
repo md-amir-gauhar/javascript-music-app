@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(0deg, #d1d5db 23.8%, #93c5fd 92%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-container {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 #4b5563;
+  width: 320px;
+  height: 70%;
+  margin: auto;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.music-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.music-cover img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px 0 #eff6ff;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.music-container.play .music-cover img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.control-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: whitesmoke;
+  border: 0;
+  color: #d1d5db;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  color: gray;
+  font-size: 30px;
+}
+
+.action-btn:hover {
+  color: gray;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.progress-container {
+  background: #d1d5db;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #60a5fa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
